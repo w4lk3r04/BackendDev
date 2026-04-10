@@ -1,0 +1,26 @@
+openapi: 3.0.3
+info:
+  title: Sample Books API
+  version: 1.0.0
+paths:
+  /books:
+    get:
+      summary: List books
+      responses:
+        "200":
+          description: ok
+    post:
+      summary: Create a book
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+              properties:
+                title:
+                  type: string
+      responses:
+        "201":
+          description: created

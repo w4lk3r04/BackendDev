@@ -1,0 +1,16 @@
+{
+  "name": "security-audit",
+  "version": "0.1.0",
+  "description": "Baseline API and repository security audit CLI",
+  "main": "src/index.js",
+  "scripts": {
+    "audit": "node src/index.js",
+    "audit:example": "node src/index.js --spec ./examples/openapi.sample.yaml --repo .. --out ./reports/audit-report"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
